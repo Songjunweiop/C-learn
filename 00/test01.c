@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+
 const int i = 999;
 const int j = 1;
 #define q 10;
@@ -8,6 +10,12 @@ const int j = 1;
 int aaa(int a, int b)
 {
   return a + b;
+}
+
+void testString(void){
+  char aaa[99] = "aaa";
+  strcat(aaa, "bbb");
+  printf("%s", aaa);
 }
 
 int main()
@@ -21,5 +29,9 @@ int main()
   printf("%c", TAB);
   printf("%d \n", i + j);
   printf("%d", qp);
+
+  testString();
+
+
   return 0;
 }
